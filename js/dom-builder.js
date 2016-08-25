@@ -46,7 +46,7 @@ function songForm(song, songId) {
       <input type="text" id="form--artist" placeholder="artist" value="${songItem.artist}"></input>
       <input type="text" id="form--album" placeholder="album" value="${songItem.album}"></input>
       <input type="text" id="form--year" placeholder="year" value="${songItem.year}"></input>
-      <button id="${songId}" class=${songItem.btnId}>${songItem.btnText}</button>`;
+      <button data-edit-id="${songId}" class=${songItem.btnId}>${songItem.btnText}</button>`;
     resolve(form);
   });
 }
